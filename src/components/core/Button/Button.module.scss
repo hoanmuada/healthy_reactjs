@@ -1,0 +1,21 @@
+.button {
+  @apply outline-none shadow cursor-pointer bg-center h-14 rounded px-5;
+  transition: background 0.8s;
+}
+
+.button__contained {
+  @apply text-white;
+  background: linear-gradient(180deg, #ffcc21 0%, #ff963c 100%);
+  &:hover {
+    background: #ff963c radial-gradient(circle, transparent 1%, #ff963c 1%) center/15000%;
+  }
+  &:active {
+    background-color: #ea6c00;
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+
+.button__fullwidth {
+  @apply w-full;
+}

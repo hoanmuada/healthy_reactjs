@@ -1,0 +1,17 @@
+.container {
+  @apply grid grid-cols-2 m-auto items-center justify-center gap-x-8 gap-y-8 justify-between md:flex md:gap-y-0;
+  .category {
+    @apply w-full bg-background-darkest flex flex-col items-center justify-center px-1;
+    max-width: 216px;
+    aspect-ratio: 3 / 2;
+    .name {
+      @apply text-primary-paler uppercase text-[22px] leading-7 text-center;
+    }
+    .line {
+      @apply border border-white w-14 mt-2.5 mb-2;
+    }
+    .description {
+      @apply text-white text-lg;
+    }
+  }
+}

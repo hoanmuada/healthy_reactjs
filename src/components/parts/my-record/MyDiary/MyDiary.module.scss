@@ -1,0 +1,14 @@
+.container {
+  .header {
+    @apply text-2xl mb-1 uppercase;
+  }
+  .list {
+    @apply grid grid-cols-1 gap-3 items-stretch md:grid-cols-2 lg:grid-cols-4;
+  }
+  .button__box {
+    @apply mt-7 text-center;
+    & button {
+      @apply w-[296px];
+    }
+  }
+}

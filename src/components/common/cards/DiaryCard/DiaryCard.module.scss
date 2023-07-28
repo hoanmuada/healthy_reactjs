@@ -1,0 +1,13 @@
+.container {
+  @apply p-4 border-2 border-line-main overflow-hidden flex flex-col gap-1 h-full;
+  .datetime {
+    @apply text-lg;
+  }
+  .title {
+    @apply line-clamp-2;
+  }
+  .content {
+    @apply line-clamp-5 overflow-hidden;
+    margin-bottom: 27px;
+  }
+}

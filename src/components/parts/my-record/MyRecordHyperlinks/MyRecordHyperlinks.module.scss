@@ -1,0 +1,25 @@
+.container {
+  @apply grid grid-cols-2 items-center justify-center gap-12 md:flex md:gap-y-0 md:justify-between;
+  .hyperlink__item {
+    @apply aspect-square w-full max-w-[288px];
+    .hyperlink__box {
+      @apply w-full h-full border-[24px] border-primary-paler relative;
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      .hyperlink {
+        @apply h-full w-full;
+        mix-blend-mode: luminosity;
+      }
+      .content {
+        @apply w-full h-full absolute top-0 left-0 flex items-center justify-center flex-col gap-2.5;
+        .title {
+          @apply text-2xl text-primary-paler opacity-100 uppercase;
+        }
+        .link {
+          @apply bg-primary-main text-white h-6 text-center;
+          width: calc(100% - 20px);
+          max-width: 160px;
+        }
+      }
+    }
+  }
+}

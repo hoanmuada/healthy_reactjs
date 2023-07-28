@@ -1,0 +1,19 @@
+.container {
+  @apply relative;
+  .activator {
+    @apply cursor-pointer;
+  }
+  .menu__options {
+    @apply absolute rounded overflow-hidden opacity-0 transition-opacity duration-300 hidden;
+    &.menu__bottom-end {
+      @apply right-0 top-full;
+    }
+    & > *:not(:first-child) {
+      @apply border-t;
+      border-color: rgba($color: #2e2e2e, $alpha: 0.25);
+    }
+    &.open {
+      @apply opacity-100 block;
+    }
+  }
+}

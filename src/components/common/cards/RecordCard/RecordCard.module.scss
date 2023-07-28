@@ -1,0 +1,12 @@
+.container {
+  @apply shadow relative;
+  aspect-ratio: 117 / 121;
+  & > img {
+    @apply h-full object-cover;
+  }
+  .card__info {
+    @apply absolute text-white text-sm bg-primary-paler bottom-0 left-0 flex items-center px-2;
+    width: 120px;
+    height: 32px;
+  }
+}

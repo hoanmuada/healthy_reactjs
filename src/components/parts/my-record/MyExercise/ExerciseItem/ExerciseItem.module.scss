@@ -1,0 +1,12 @@
+.container {
+  @apply flex justify-between;
+  .title {
+    @apply flex items-center gap-x-3;
+    .dot {
+      @apply w-1.5 h-1.5 rounded-full bg-white;
+    }
+  }
+  .minutes {
+    @apply text-primary-paler;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  @apply bg-text-main px-10 lg:px-20 xl:px-40;
+  height: 128px;
+  .menu {
+    @apply flex items-center h-full text-white;
+    column-gap: 45px;
+    & > a {
+      @apply text-xs;
+    }
+  }
+  .btnScroll{
+    position:fixed;
+    bottom: 150px;
+    right: 5%;
+    border: 1px solid #777777;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    
+  }
+}
+@media (max-width:540px) {
+  .container {
+      height:220px;
+      
+  }
+  .menu{
+    flex-direction: column;
+      justify-content: space-around;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  @apply flex items-center justify-center flex-col cursor-pointer;
+  width: 116px;
+  height: 116px;
+  background: linear-gradient(155.89deg, #ffcc21 8.26%, #ff963c 91.18%);
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}

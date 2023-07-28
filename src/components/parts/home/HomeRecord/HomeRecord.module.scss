@@ -1,0 +1,11 @@
+.container {
+  .list {
+    @apply grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4;
+  }
+  .button__box {
+    @apply mt-7 text-center;
+    & button {
+      @apply w-[296px];
+    }
+  }
+}

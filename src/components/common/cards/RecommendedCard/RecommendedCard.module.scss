@@ -1,0 +1,14 @@
+.container {
+  .image {
+    aspect-ratio: 13 / 8;
+    img {
+      @apply h-full w-full object-cover;
+    }
+  }
+  .title {
+    @apply line-clamp-2 mt-2;
+  }
+  .hashtags {
+    @apply flex text-primary-main gap-3 text-xs;
+  }
+}
